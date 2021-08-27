@@ -40,7 +40,6 @@ public class X01_Practice_jquery {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
-		driver.manage().window().maximize(); //test
 	}	
 
 	@Test
