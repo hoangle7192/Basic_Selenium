@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-27T13:29:18Z" name="Default suite" finished-at="2021-08-27T13:29:46Z" duration-ms="28450">
+    <groups>
+    </groups>
+    <test started-at="2021-08-27T13:29:18Z" name="Default test" finished-at="2021-08-27T13:29:46Z" duration-ms="28450">
+      <class name="practice.X01_Practice_jquery">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:practice.X01_Practice_jquery@3c3d9b6b]" started-at="2021-08-27T13:29:18Z" name="beforeClass" finished-at="2021-08-27T13:29:31Z" duration-ms="13286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC_01_Basic()[pri:0, instance:practice.X01_Practice_jquery@3c3d9b6b]" started-at="2021-08-27T13:29:31Z" name="TC_01_Basic" finished-at="2021-08-27T13:29:46Z" duration-ms="15137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Basic -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:practice.X01_Practice_jquery@3c3d9b6b]" started-at="2021-08-27T13:29:46Z" name="afterClass" finished-at="2021-08-27T13:29:46Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- practice.X01_Practice_jquery -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
