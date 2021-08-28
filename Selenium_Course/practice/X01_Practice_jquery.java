@@ -51,6 +51,8 @@ public class X01_Practice_jquery {
 		driver.switchTo().alert().accept();
 		sleepInSecond(3);
 		Assert.assertTrue(driver.findElement(By.xpath("//p[text()='You clicked an alert successfully ']")).isDisplayed());
+
+		//test123434
 		}
 
 	public void sleepInSecond(long timeoutInSecond) {
