@@ -113,7 +113,7 @@ public class Topic09_03_Alert_Authentication {
 		String input = "test_automation";
 		alert.sendKeys(input);
 
-		alert.dismiss(); // accept alert
+		alert.accept(); // accept alert
 
 		Assert.assertEquals(driver.findElement(By.cssSelector("#result")).getText(), "You entered: " + input); // verify text tra ve
 
