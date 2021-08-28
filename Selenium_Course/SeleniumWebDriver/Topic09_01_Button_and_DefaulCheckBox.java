@@ -37,7 +37,7 @@ public class Topic09_01_Button_and_DefaulCheckBox {
 
 	}
 
-	//@Test
+	@Test
 	public void TC_01_button() {
 		driver.get("https://www.fahasa.com/customer/account/create"); // get URL
 		String createPage = driver.getCurrentUrl();
@@ -80,7 +80,7 @@ public class Topic09_01_Button_and_DefaulCheckBox {
 		Assert.assertEquals(hexa, "#C92127"); //compare rgba=hexa
 	}
 	
-	//@Test
+	@Test
 	public void Tc_02_Radio_default() {
 		By petrol92 = By.xpath("//label[text()='1.4 Petrol, 92kW']/preceding-sibling::input");
 		By diesel103 = By.xpath("//label[text()='2.0 Diesel, 103kW']/preceding-sibling::input");
