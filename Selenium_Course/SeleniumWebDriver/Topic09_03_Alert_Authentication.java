@@ -57,7 +57,7 @@ public class Topic09_03_Alert_Authentication {
 		executor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsAlertButtonBy)); //Scroll xuong button
 		driver.findElement(jsAlertButtonBy).click(); // click vao button
 
-		// Wait cho alert duoc hien thi
+		// Wait + switch cho alert
 		alert = explicitWait.until(ExpectedConditions.alertIsPresent());
 		sleepInSecond(3);
 
@@ -158,6 +158,7 @@ public class Topic09_03_Alert_Authentication {
 
     // tam thoi Pending
     //@Test
+    // phải khởi tạo script chứa Auto-IT trước
     public void TC_09_Authentication_Alert_AutoIT() throws IOException {
 		String loginUser = "admin";
 		String password = "admin";
