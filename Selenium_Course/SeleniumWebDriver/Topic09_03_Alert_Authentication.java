@@ -2,7 +2,6 @@ package SeleniumWebDriver;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -18,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 public class Topic09_03_Alert_Authentication {
 	WebDriver driver;
 	String projectPath = System.getProperty("user.dir");
-	JavascriptExecutor executor;
+	JavascriptExecutor JsExecutor;
 	Alert alert;
 	WebDriverWait explicitWait;
 
@@ -38,7 +37,7 @@ public class Topic09_03_Alert_Authentication {
 		driver = new ChromeDriver();
 
 		// add kieu tuong minh
-		executor = (JavascriptExecutor) driver;
+		JsExecutor = (JavascriptExecutor) driver;
 
 		// Wait cho alert xuat hien
 		explicitWait = new WebDriverWait(driver, 15);
@@ -54,7 +53,7 @@ public class Topic09_03_Alert_Authentication {
 
 		By jsAlertButtonBy = By.xpath("//button[text()='Click for JS Alert']"); //dat ten bien local
 
-		executor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsAlertButtonBy)); //Scroll xuong button
+		JsExecutor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsAlertButtonBy)); //Scroll xuong button
 		driver.findElement(jsAlertButtonBy).click(); // click vao button
 
 		// Wait + switch cho alert
@@ -80,7 +79,7 @@ public class Topic09_03_Alert_Authentication {
 
 		By jsConfirmButtonBy = By.xpath("//button[text()='Click for JS Confirm']"); //dat ten bien local
 
-		executor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsConfirmButtonBy)); //Scroll xuong button
+		JsExecutor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsConfirmButtonBy)); //Scroll xuong button
 		driver.findElement(jsConfirmButtonBy).click(); // click vao button
 
 		// Wait cho alert duoc hien thi
@@ -106,7 +105,7 @@ public class Topic09_03_Alert_Authentication {
 
 		By jsPromptButtonBy = By.xpath("//button[text()='Click for JS Prompt']"); //dat ten bien local
 
-		executor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsPromptButtonBy)); //Scroll xuong button
+		JsExecutor.executeScript("arguments[0].scrollIntoView(true);", driver.findElement(jsPromptButtonBy)); //Scroll xuong button
 		driver.findElement(jsPromptButtonBy).click(); // click vao button
 
 		// Wait cho alert duoc hien thi
