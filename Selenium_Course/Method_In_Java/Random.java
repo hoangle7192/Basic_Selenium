@@ -4,16 +4,17 @@ import org.openqa.selenium.WebDriver;
 
 public class Random {
 	WebDriver driver;
-	
-	// Ham random
+
+	// Random số
 	public int randomNumber() {
-		Random randomGenerator = new Random();
-		return randomGenerator.nextInt(100000);
+		java.util.Random rand = new java.util.Random();
+		return rand.nextInt(100000);
 	}
 
-	private int nextInt(int i) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
 
+	// Random Email
+	public String genarationEmail() {
+		java.util.Random rand = new java.util.Random();
+		return rand.nextInt(9999) + "@gmail.com";
+	}
 }

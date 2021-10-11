@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 public class add_extension {
 	WebDriver driver;
@@ -18,7 +19,7 @@ public class add_extension {
 	@BeforeClass
 	public void beforeClass() {
 		
-		// Chrome123
+		// Chrome
 		System.setProperty("webdriver.chrome.driver", projectPath + "\\browserDrivers\\chromedriver.exe");
 		
 		// Add extension to browser
@@ -26,12 +27,18 @@ public class add_extension {
 		// 2. mở trang: https://chrome-extension-downloader.com/ , get file crx về local
 		// 3. tạo folder browserExtension trên IDE, paste vào folder
 		// 4. Config trên IDE
-		
 		// 4.1 cấu hình profile cho Chrome
 		ChromeOptions options = new ChromeOptions();
 		options.addExtensions(new File(projectPath + "\\browserExtension\\UltraSurf-VPN_v1.6.0.crx"));
 		driver = new ChromeDriver(options);
+
+
 		
+	}
+
+	@Test
+	public void TC_01() {
+		driver.get("https://shopee.vn/");
 	}
 	
 

@@ -20,6 +20,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 // [Online 21] - Topic 21 (User Interaction - Part II) - https://www.youtube.com/watch?v=MWWGFd2mC5A&list=PLo1QA-RK2zyosMdELpBN0h027Ht7PA2kj&index=23
+// [Online 22] - Topic 24 (User Interaction - Part II) - https://www.youtube.com/watch?v=y7bKv_72tk8
 
 public class Topic10_02_Double_click {
     WebDriver driver;
