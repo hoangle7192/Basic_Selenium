@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <parameter name="url" value="http://demo.guru99.com/v4/"></parameter>
+
+
+    <test name="Run on firefox">
+        <parameter name="browser" value="Firefox"></parameter>
+        <classes>
+            <class name="TestNG.parameter_multiBrowser.Test_setup_enviroment"></class>
+        </classes>
+    </test>
+
+    <test name="Run on Chrome">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="TestNG.parameter_multiBrowser.Test_setup_enviroment"></class>
+        </classes>
+    </test>
+
+    <test name="Run on Edge">
+        <parameter name="browser" value="Edge"></parameter>
+        <classes>
+            <class name="TestNG.parameter_multiBrowser.Test_setup_enviroment"></class>
+        </classes>
+    </test>
+</suite>
