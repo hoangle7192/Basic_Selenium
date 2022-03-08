@@ -6,6 +6,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -32,6 +35,15 @@ public class add_extension {
 		options.addExtensions(new File(projectPath + "\\browserExtension\\UltraSurf-VPN_v1.6.0.crx"));
 		driver = new ChromeDriver(options);
 
+		// Firefox
+		//case FIREFOX:
+		/*WebDriverManager.firefoxdriver().setup();
+		FirefoxOptions firefoxOptions = new FirefoxOptions();
+		FirefoxProfile profile = new FirefoxProfile();
+		profile.addExtension(new File(GlobalConstants.ADBLOCK_EXTENSION_OF_FIREFOX));
+		firefoxOptions.setProfile(profile);
+		driver = new FirefoxDriver(firefoxOptions);
+*/
 
 		
 	}
