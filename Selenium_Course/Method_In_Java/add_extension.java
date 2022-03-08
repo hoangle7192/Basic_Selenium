@@ -42,8 +42,8 @@ public class add_extension {
 		FirefoxProfile profile = new FirefoxProfile();
 		profile.addExtension(new File(GlobalConstants.ADBLOCK_EXTENSION_OF_FIREFOX));
 		firefoxOptions.setProfile(profile);
-		driver = new FirefoxDriver(firefoxOptions);
-*/
+		driver = new FirefoxDriver(firefoxOptions); check
+*/ 
 
 		
 	}
